@@ -48,6 +48,7 @@ main article {
     color: #e0dbdb;
     line-height: 1.5;
     text-rendering: auto;
+    font-size: 1.4rem;
 }
 
 main article span {
