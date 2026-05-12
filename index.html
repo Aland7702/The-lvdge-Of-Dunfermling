@@ -29,8 +29,6 @@
         <meta name="Redesigned" content="Redesigned by Alan Drylie" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
             rel="stylesheet"
@@ -40,63 +38,69 @@
     <body>
         <header>
             <img src="media/images/lvdge26.svg" alt="The Lvdge Of Dunfermling No.26" />
-            <h1>The Lvdge Of Dunfermling No.26</h1>
-            <nav class="mobileNavBar">
-                <ul>
-                    <li>Home</li>
-                    <li>
-                        History
+            <div class="mobileNavBar">
+                <h1>The Lvdge Of Dunfermling No.26</h1>
+                <nav>
+                    <button id="mobileMenu">&#x2630;</button>
+                     </nav>
+                    <div id="mobileNavLinks">
                         <ul>
-                            <li>Past Masters</li>
-                            <li>Roll of Honour</li>
-                            <li>Acknowledgements</li>
+                            <li>Home</li>
+                            <li>
+                                <button id="historySubMenu">History</button>
+                                <ul id="historyExpanded">
+                                    <li>Past Masters</li>
+                                    <li>Roll of Honour</li>
+                                    <li>Acknowledgements</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button id="membersSubMenu">Members</button>
+                                <ul id="membersExpanded">
+                                    <li>Current Membership</li>
+                                    <li>Frequent Visitors</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button id="meetingsSubMenu">Meetings</button>
+                                <ul id="meetingsExpanded">
+                                    <li>Meetings</li>
+                                    <li>Events</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button id="gallerySubMenu"> Gallery</button>
+                                <ul id="galleryExpanded">
+                                    <li>2011</li>
+                                    <li>2012</li>
+                                    <li>2013</li>
+                                    <li>2014</li>
+                                    <li>2015</li>
+                                    <li>2016</li>
+                                    <li>2017</li>
+                                    <li>2018</li>
+                                    <li>2019</li>
+                                    <li>2020</li>
+                                    <li>2021</li>
+                                    <li>2022</li>
+                                    <li>2023</li>
+                                    <li>2024</li>
+                                    <li>2025</li>
+                                    <li>2026</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button id="visitSubMenu">Visit Us</button>
+                                <ul id="visitExpanded">
+                                    <li>Our Location</li>
+                                    <li>How Do I Join</li>
+                                    <li>Contact Us</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        Members
-                        <ul>
-                            <li>Current Membership</li>
-                            <li>Frequent Visitors</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Meetings &amp; Events
-                        <ul>
-                            <li>Meetings</li>
-                            <li>Events</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Gallery
-                        <ul>
-                            <li>2011</li>
-                            <li>2012</li>
-                            <li>2013</li>
-                            <li>2014</li>
-                            <li>2015</li>
-                            <li>2016</li>
-                            <li>2017</li>
-                            <li>2018</li>
-                            <li>2019</li>
-                            <li>2020</li>
-                            <li>2021</li>
-                            <li>2022</li>
-                            <li>2023</li>
-                            <li>2024</li>
-                            <li>2025</li>
-                            <li>2026</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Visit Us
-                        <ul>
-                            <li>Our Location</li>
-                            <li>How Do I Join</li>
-                            <li>Contact Us</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+                    </div>
+               
+            </div>
         </header>
 
         <main>
@@ -116,7 +120,11 @@
                     <br />
                     Mark Master Mason Degree
                 </p>
-                <p>Lodge Tyles at <span>7:30pm </span>- all welcome</p>
+                <p>
+                    Lodge Tyles at
+                    <span>7:30pm</span>
+                    - all welcome
+                </p>
             </article>
 
             <article>
@@ -127,7 +135,8 @@
                     <br />
                     Wednesday the 8th of September
                     <br />
-                    The lodge will tyle at <span> 7:15pm</span>
+                    The lodge will tyle at
+                    <span>7:15pm</span>
                     <br />
                     <span>there will be a ballot for 2 potential members on this night</span>
                     <br />
@@ -144,7 +153,8 @@
                     <br />
                     for a progressive candidate.
                     <br />
-                    The lodge will tyle at <span> 7:15pm</span>
+                    The lodge will tyle at
+                    <span>7:15pm</span>
                 </p>
                 <p>All are welcome</p>
             </article>
@@ -154,5 +164,6 @@
             <a href="#">The Small Print</a>
             | Version 2.0
         </footer>
+        <script src="javaScript.js"></script>
     </body>
 </html>

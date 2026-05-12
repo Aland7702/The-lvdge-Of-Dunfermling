@@ -20,21 +20,82 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+     font-size: 1.2rem;
     background-color: #a90610;
 }
 
+button {
+    background-color: #a90610;
+    border: 0;
+    color: #ffc849;
+    font-family: "Lora", serif;
+    font-size: 1.2rem;
+}
 header img {
     width: 100%;
     object-fit: contain;
 }
 
 header h1 {
-    text-align: center;
     margin-top: 0;
     color: #fed169;
+    font-size: 1.18rem;
 }
-nav {
+
+.mobileNavBar {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+#mobileMenu {
+    color: #fed169;
+    background-color: #a90610;
+    font-size: 1.25rem;
+}
+#mobileNavLinks {
     display: none;
+}
+#mobileNavLinks.showMenu {
+    display: block;
+    width: 100%;
+}
+
+#mobileNavLinks ul {
+    color: #ffc849;
+    margin-block-start: 0;
+}
+#mobileNavLinks li {
+padding: .5rem 0;
+}
+#historyExpanded {
+    display: none;
+}
+#historyExpanded.showHistory {
+    display: block;
+}
+#membersExpanded {
+    display: none;
+}
+#membersExpanded.showMembers {
+    display: block;
+}
+#meetingsExpanded {
+    display: none;
+}
+#meetingsExpanded.showMeetings {
+    display: block;
+}
+#galleryExpanded {
+    display: none;
+}
+#galleryExpanded.showGallery {
+    display: block;
+}
+#visitExpanded {
+    display: none;
+}
+#visitExpanded.showVisit {
+    display: block;
 }
 
 main img {
@@ -49,14 +110,15 @@ main article {
     line-height: 1.5;
     text-rendering: auto;
     font-size: 1.4rem;
+   
 }
 
 main article span {
-    font-weight: 500 ;
+    font-weight: 500;
 }
 
 footer {
-    font-size:x-small;
+    font-size: x-small;
 }
 footer a {
     color: #e0dbdb;
